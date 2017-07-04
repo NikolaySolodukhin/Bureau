@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+css/*.css
+node_modules/
+build/
+img/symbols.svg
+js/main.js
+Thumbs.db
+.publish

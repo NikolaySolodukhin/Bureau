@@ -1,0 +1,5 @@
+$font-family-set: "Open Sans", Arial, sans-serif;
+
+@custom-media --tablet-width (min-width: 768px);
+@custom-media --desktop-width (min-width: 1100px);
+@custom-media --retina (min-resolution: 144dpi), (min-resolution: 1.5dppx);
