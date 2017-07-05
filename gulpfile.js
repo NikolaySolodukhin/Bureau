@@ -79,7 +79,7 @@ gulp.task('concat:dev', function() {
 });
 
 gulp.task('images', function() {
-  return gulp.src('img/**/*.{png,jpg,gif}')
+  return gulp.src('img/*.{png,jpg,gif}')
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.jpegtran({progressive: true})
