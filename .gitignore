@@ -9,6 +9,5 @@ css/*.css
 node_modules/
 build/
 img/symbols.svg
-js/main.js
 Thumbs.db
 .publish
