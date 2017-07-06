@@ -1,0 +1,22 @@
+.footer-navigation {
+  width: 880px;
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:first-child {
+      padding-left: 28px;
+    }
+  }
+
+  &__link {
+    @mixin third-text;
+    color: black;
+    text-decoration: none;
+  }
+}

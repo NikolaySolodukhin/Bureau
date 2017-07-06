@@ -2,3 +2,28 @@
 @import "global/fonts.css";
 @import "variables.css";
 @import "mixins.css";
+
+@import "blocks/page.css";
+@import "blocks/container.css";
+@import "blocks/page-header.css";
+@import "blocks/main-navigation.css";
+@import "blocks/contacts.css";
+@import "blocks/user-block.css";
+
+@import "blocks/page-content.css";
+@import "blocks/hero.css";
+@import "blocks/btn.css";
+@import "blocks/feature.css";
+@import "blocks/teacher.css";
+@import "blocks/reviews-slider.css";
+@import "blocks/slider-toggle.css";
+@import "blocks/reviews.css";
+@import "blocks/review-content.css";
+@import "blocks/partner.css";
+@import "blocks/social.css";
+@import "blocks/slider.css";
+@import "blocks/quote.css";
+@import "blocks/promo.css";
+
+@import "blocks/page-footer.css";
+@import "blocks/footer-navigation.css";

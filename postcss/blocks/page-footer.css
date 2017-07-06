@@ -1,0 +1,17 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__logo {
+    padding-top: 5px;
+    padding-left: 2px;
+  }
+
+  &__copyright {
+    @mixin fourth-text;
+    color: $color-grey-text;
+  }
+}

@@ -1,0 +1,41 @@
+.promo {
+  min-height: 540px;
+  background-image: url("..//../img/bg-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #5b5858;
+
+  &__wrapper {
+    width: 630px;
+    padding-top: 171px;
+  }
+
+  &__title {
+    @mixin main-text;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  &__text {
+    @mixin secondary-text;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    margin-bottom: 46px;
+  }
+
+  &__btn {
+    @mixin fourth-text;
+    color: white;
+    background-color: #5f29cc;
+    width: 241px;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

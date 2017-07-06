@@ -1,0 +1,56 @@
+.teacher {
+  background-color:#fafafa;
+
+  &__title {
+    @mixin main-text;
+    text-align: center;
+    padding-top: 52px;
+    margin-top: 0;
+    margin-bottom: 47px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 20px;
+    margin-bottom: 32px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: $font-weight-basic;
+    line-height: $line-height-basic;
+    margin-left: 29px;
+    margin-bottom: 5px;
+  }
+
+  &__status {
+    @mixin third-text;
+    color: $color-grey-text;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  &__selection {
+    @mixin third-text;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 31px;
+    padding-right: 45px;
+    margin-top: 17px;
+    background-color: #5f29cc;
+    margin-bottom: 57px;
+    cursor: pointer;
+    color: white;
+  }
+}

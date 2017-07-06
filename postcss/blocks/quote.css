@@ -1,0 +1,45 @@
+.quote {
+  display: flex;
+  padding-left: 153px;
+  padding-right: 153px;
+
+  &__content,
+  &__person {
+    flex-basis: 50%;
+    box-sizing: border-box;
+  }
+
+  &__content {
+    padding-top: 70px;
+  }
+
+  &__person {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 44px;
+  }
+
+  &__name {
+    @mixin main-text;
+    position: relative;
+    margin-bottom: 45px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -22px;
+      width: 37px;
+      height: 3px;
+      left: 1px;
+      background-color: #5f29cc;
+    }
+  }
+  &__text {
+    @mixin secondary-text;
+    line-height: 26px;
+  }
+  &__cite {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
