@@ -1,0 +1,61 @@
+.reviews-slider {
+  background-color: white;
+
+  &__wrapper {
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    @mixin main-text;
+    margin-top: 54px;
+    margin-right: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 48%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    position: relative;
+    border: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    background-color: #efe9fa;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      left: 22px;
+      width: 7px;
+      height: 7px;
+      border-right: 2px solid #5f29cc;
+      border-bottom: 2px solid #5f29cc;
+      transform: rotate(136deg);
+    }
+
+    &--rotate {
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &--active {
+      background-color: #5f29cc;
+      &::after {
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,46 @@
+.social {
+  padding-bottom: 45px;
+  &__title {
+    font-size: 28px;
+    line-height: $line-height-basic;
+    font-weight: $font-weight-basic;
+    margin-top: 37px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    @mixin fourth-text;
+    display: block;
+    width: 222px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    color: $color-grey-text;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #ebebeb;
+    margin-right: 13px;
+    text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+
+
+    &--fb,
+    &--vk,
+    &--twitter,
+    &--linkedIn,
+    &--instagram {
+      content: ""
+
+    }
+  }
+}

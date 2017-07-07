@@ -1,0 +1,38 @@
+.contacts {
+  width: 220px;
+  text-align: center;
+  padding-left: 32px;
+  position: relative;
+  margin-right: 12px;
+  &__number {
+    font-size: 22px;
+    font-weight: $font-weight-basic;
+    line-height: $line-height-basic;
+    margin-top: -7px;
+    margin-bottom: 0px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("..//..//img/spritesheet.png");
+    background-position: 63px 60px;
+    width: 27px;
+    height: 27px;
+    left: -12px;
+    top: -5px;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("..//..//img/spritesheet.png");
+    background-position: 101px 94px;
+    width: 27px;
+    height: 27px;
+    left: 24px;
+    top: -6px;
+    cursor: pointer;
+  }
+}

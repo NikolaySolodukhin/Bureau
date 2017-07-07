@@ -1,0 +1,86 @@
+.partner {
+  background-color: #fafafa;
+
+  &__wrapper {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @mixin main-text;
+    margin-top: 1px;
+    margin-bottom: 47px;
+    padding-top: 41px;
+    text-align: center;
+  }
+
+  &__list {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 16px;
+  }
+
+  &__item {
+    display: flex;
+    width: 18.76%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    marign-left: 10px;
+    margin-bottom: 30px;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+      justify-content: flex-end;
+    }
+
+    &:nth-child(5n+1) {
+      margin-left: 0;
+      justify-content: flex-start;
+    }
+
+    &--DG {
+      justify-content: flex-end;
+      padding-right: 15px;
+    }
+  }
+
+  &__link {
+
+    &--michelin {
+      padding-right: 19px;
+    }
+
+    &--ford {
+      padding-left: 38px;
+    }
+
+    &--cybergame {
+      align-self: baseline;
+      padding-top: 2px;
+       padding-right: 17px;
+    }
+
+    &--bosch {
+      align-self: baseline;
+      padding-top: 5px;
+    }
+
+    &--playstation {
+      padding-right: 4px;
+    }
+
+    &--adidas {
+      padding-left: 40px;
+    }
+
+    &--PP {
+      padding-left: 19px;
+    }
+  }
+}
