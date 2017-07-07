@@ -1,7 +1,12 @@
 .quote {
   display: flex;
-  padding-left: 153px;
-  padding-right: 153px;
+  margin-left: 153px;
+  margin-right: 153px;
+  min-height: 507px;
+
+  &--hidden {
+    display: none;
+  }
 
   &__content,
   &__person {
@@ -31,7 +36,7 @@
       width: 37px;
       height: 3px;
       left: 1px;
-      background-color: #5f29cc;
+      background-color: $main-color-lilac;
     }
   }
   &__text {

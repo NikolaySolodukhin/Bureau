@@ -8,6 +8,5 @@
 css/*.css
 node_modules/
 build/
-img/symbols.svg
 Thumbs.db
 .publish

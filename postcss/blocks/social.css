@@ -1,5 +1,6 @@
 .social {
   padding-bottom: 45px;
+
   &__title {
     font-size: 28px;
     line-height: $line-height-basic;
@@ -29,18 +30,65 @@
     border: 1px solid #ebebeb;
     margin-right: 13px;
     text-align: center;
+
     &:last-child {
       margin-right: 0;
     }
 
-
-    &--fb,
     &--vk,
     &--twitter,
+    &--fb,
     &--linkedIn,
     &--instagram {
-      content: ""
-
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("..//..//img/spritesheet.png");
+        cursor: pointer;
+        width: 27px;
+        height: 27px;
+      }
     }
+
+    &--vk {
+      &::before {
+        background-position: 31px 28px;
+        left: 51px;
+        top: 14px;
+      }
+    }
+
+    &--fb {
+      &::before {
+        background-position: 36px -3px;
+        top: 12px;
+        left: 55px;
+      }
+    }
+
+    &--linkedIn {
+      &::before {
+        background-position: -37px -3px;
+        top: 12px;
+        left: 60px;
+      }
+    }
+
+    &--instagram {
+      &::before {
+        background-position: 29px -35px;
+        top: 11px;
+        left: 58px;
+      }
+    }
+
+    &--twitter {
+      &::before {
+        background-position: 1px 30px;
+        top: 12px;
+        left: 61px;
+      }
+    }
+
   }
 }

@@ -1,12 +1,12 @@
 .user-block {
-  width: 138px;
-  text-align: center;
-  border: 1px solid #5f29cc;
-  padding-top: 15px;
-  padding-bottom: 9px;
   cursor: pointer;
   &__entrance {
     @mixin fourth-text;
-    vertical-align: top;
+    display: block;
+    width: 138px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    text-align: center;
+    border: 1px solid $main-color-lilac;
   }
 }

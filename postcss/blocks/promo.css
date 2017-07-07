@@ -1,13 +1,20 @@
 .promo {
   min-height: 540px;
-  background-image: url("..//../img/bg-promo.jpg");
+  background-image: url("..//../img/bg-promo@1x.jpg");
+  background-size: 1440px auto;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #5b5858;
 
+  @media (--retina) {
+    background-image: url("..//..//img/bg-promo@2x.jpg");
+  }
+
   &__wrapper {
     width: 630px;
     padding-top: 171px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   &__title {
@@ -29,7 +36,7 @@
   &__btn {
     @mixin fourth-text;
     color: white;
-    background-color: #5f29cc;
+    background-color: $main-color-lilac;
     width: 241px;
     text-align: center;
     display: block;

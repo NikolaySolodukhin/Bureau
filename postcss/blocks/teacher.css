@@ -1,5 +1,5 @@
 .teacher {
-  background-color:#fafafa;
+  background-color: #fafafa;
 
   &__title {
     @mixin main-text;
@@ -43,14 +43,15 @@
     @mixin third-text;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    padding-left: 31px;
-    padding-right: 45px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 44px;
     margin-top: 17px;
-    background-color: #5f29cc;
+    border: 1px solid $main-color-lilac;
+    background-color: white;
     margin-bottom: 57px;
     cursor: pointer;
-    color: white;
+    color: $main-color-lilac;
   }
 }

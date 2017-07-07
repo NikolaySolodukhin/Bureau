@@ -12,11 +12,12 @@
     margin-bottom: 0px;
   }
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     background-image: url("..//..//img/spritesheet.png");
-    background-position: 63px 60px;
+    background-position: 64px 61px;
     width: 27px;
     height: 27px;
     left: -12px;
@@ -25,14 +26,8 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    background-image: url("..//..//img/spritesheet.png");
     background-position: 101px 94px;
-    width: 27px;
-    height: 27px;
     left: 24px;
     top: -6px;
-    cursor: pointer;
   }
 }

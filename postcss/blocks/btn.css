@@ -1,4 +1,8 @@
 .btn {
   text-decoration: none;
   text-transform: uppercase;
+  &:hover {
+    background-color: $main-color-lilac;
+    color: white;
+  }
 }
