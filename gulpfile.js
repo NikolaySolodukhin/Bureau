@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var precss = require('precss');
+var csscomb = require('gulp-csscomb');
 var rename = require('gulp-rename');
 var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
@@ -40,6 +41,7 @@ gulp.task('style', function() {
       'last 2 versions'
     ]})
   ]))
+  .pipe(csscomb())
   .pipe(csso())
   .pipe(gulp.dest('build/css'));
 });
@@ -53,6 +55,7 @@ gulp.task('style:dev', function() {
       'last 2 versions'
     ]})
   ]))
+  .pipe(csscomb())
   .pipe(gulp.dest('css'))
   .pipe(server.stream());
 });
@@ -65,8 +68,7 @@ gulp.task('htmlminify', function() {
 });
 
 gulp.task('jsmin', function() {
-  return gulp.src(['js/utils.js', 'js/map.js'])
-  .pipe(concat('main.js'))
+  return gulp.src(['js/utils.js'])
   .pipe(uglify())
   .pipe(gulp.dest('build/js'));
 });
@@ -133,7 +135,7 @@ gulp.task('html:update', ['html:copy'], function(done) {
   done();
 });
 
-gulp.task('serve', ['clean:dev','style:dev'], function() {
+gulp.task('serve', ['clean:dev', 'style:dev'], function() {
   server.init({
     server: '.',
     notify: false,
@@ -149,7 +151,7 @@ gulp.task('serve', ['clean:dev','style:dev'], function() {
 gulp.task('build', function(fn) {
   run(
     'clean',
-    ['copy', 'style', 'htmlminify', 'jsmin', 'symbols'],
+    ['copy', 'style', 'htmlminify', 'jsmin'],
     fn
   );
 });

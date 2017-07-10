@@ -4,4 +4,12 @@
   padding-top: 30px;
   padding-left: 120px;
   padding-right: 120px;
+
+  &__item {
+    display: flex;
+
+    &--hidden {
+      display: none;
+    }
+  }
 }
