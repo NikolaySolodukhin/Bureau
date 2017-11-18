@@ -47,10 +47,10 @@
       &::before {
         content: "";
         position: absolute;
-        width: 27px;
-        height: 27px;
-        background-image: url("../../img/spritesheet.png");
+        width: 22px;
+        height: 23px;
         cursor: pointer;
+        background-repeat: no-repeat;
       }
     }
 
@@ -58,7 +58,11 @@
       &::before {
         top: 14px;
         left: 51px;
-        background-position: 31px 28px;
+        background-image: url("../img/sprite/vk.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/vk@2x.png");
+        }
       }
     }
 
@@ -66,7 +70,11 @@
       &::before {
         top: 12px;
         left: 55px;
-        background-position: 36px -3px;
+        background-image: url("../img/sprite/fb.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/fb@2x.png");
+        }
       }
     }
 
@@ -74,7 +82,11 @@
       &::before {
         top: 12px;
         left: 60px;
-        background-position: -37px -3px;
+        background-image: url("../img/sprite/in.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/in@2x.png");
+        }
       }
     }
 
@@ -82,7 +94,11 @@
       &::before {
         top: 11px;
         left: 58px;
-        background-position: 29px -35px;
+        background-image: url("../img/sprite/ig.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/ig@2x.png");
+        }
       }
     }
 
@@ -90,7 +106,11 @@
       &::before {
         top: 12px;
         left: 61px;
-        background-position: 1px 30px;
+        background-image: url("../img/sprite/tw.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/tw@2x.png");
+        }
       }
     }
 

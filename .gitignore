@@ -10,3 +10,4 @@ node_modules/
 build/
 Thumbs.db
 .publish
+img/sprite/sprite.png

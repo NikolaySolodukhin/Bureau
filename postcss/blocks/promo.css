@@ -1,13 +1,13 @@
 .promo {
   min-height: 540px;
   background-color: #5b5858;
-  background-image: url("../../img/bg-promo@1x.jpg");
+  background-image: url("../../img/bg/bg-promo@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px auto;
 
   @media (--retina) {
-    background-image: url("../../img/bg-promo@2x.jpg");
+    background-image: url("../../img/bg/bg-promo@2x.jpg");
   }
 
   &__wrapper {

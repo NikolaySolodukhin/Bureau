@@ -4,13 +4,13 @@
     min-height: 500px;
     margin-bottom: 30px;
     background-color: #352c27;
-    background-image: url("../../img/bg-hero@1x.jpg");
+    background-image: url("../../img/bg/bg-hero@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1439px auto;
 
     @media (--retina) {
-      background-image: url("../../img/bg-hero@2x.jpg");
+      background-image: url("../../img/bg/bg-hero@2x.jpg");
     }
   }
 
