@@ -1,8 +1,17 @@
 .btn {
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
   &:hover {
-    background-color: $main-color-lilac;
     color: white;
+    background-color: $main-color-lilac;
+  }
+
+  &--lilac {
+    background-color:$main-color-lilac;
+    border-color: $main-color-lilac;
+
+    &:hover {
+      background-color: #6b2ee5;
+    }
   }
 }

@@ -168,5 +168,7 @@ gulp.task('demo', function() {
 
 gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/NikolaySolodukhin/Bureau'
+    }));
 });

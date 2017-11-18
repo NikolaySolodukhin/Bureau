@@ -1,45 +1,45 @@
 .hero {
 
   &--promo {
-    background-image: url("..//..//img/bg-hero@1x.jpg");
-    background-size: 1439px auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #352c27;
     min-height: 500px;
     margin-bottom: 30px;
+    background-color: #352c27;
+    background-image: url("../../img/bg-hero@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1439px auto;
 
     @media (--retina) {
-      background-image: url("..//../img/bg-hero@2x.jpg")
+      background-image: url("../../img/bg-hero@2x.jpg");
     }
   }
 
   &__title {
-    width: 500px;
-    position: relative;
-    margin-top: 0px;
-    padding-top: 72px;
     @mixin main-text;
-    color: white;
+    position: relative;
+    width: 500px;
+    margin-top: 0px;
     margin-bottom: 46px;
+    padding-top: 72px;
+    color: white;
 
     &::before {
       content: "";
       position: absolute;
-      bottom: -23px;
+      left: 1px;
       width: 37px;
       height: 3px;
-      left: 1px;
       background-color: #5f29cc;
+      bottom: -23px;
     }
   }
 
   &__text {
     @mixin secondary-text;
-    line-height: 26px;
     width: 500px;
-    color: white;
     margin-bottom: 30px;
+    line-height: 26px;
+    color: white;
   }
 
   &__buttons {
@@ -48,14 +48,14 @@
 
   &__button {
     @mixin third-text;
-    color: white;
     width: 117px;
-    padding-right: 33px;
-    padding-left: 33px;
-    border: 1px solid white;
-    padding-top: 18px;
     margin-right: 10px;
+    padding-top: 18px;
+    padding-right: 33px;
     padding-bottom: 15px;
+    padding-left: 33px;
+    color: white;
+    border: 1px solid white;
 
     &:hover {
       border-color: $main-color-lilac;
@@ -63,20 +63,20 @@
   }
 
   &__person-name {
-    font-size: 18px;
-    font-weight: $font-weight-basic;
-    line-height: $line-height-basic;
     display: flex;
     justify-content: flex-end;
     margin-top: -3px;
     margin-bottom: 0;
+    font-weight: $font-weight-basic;
+    font-size: 18px;
+    line-height: $line-height-basic;
     color:white;
   }
 
   &__person-position {
     @mixin fourth-text;
-    display: flex;
     position: relative;
+    display: flex;
     justify-content: flex-end;
     margin-top: 3px;
     text-align: right;
@@ -85,11 +85,11 @@
     &::before {
       content: "";
       position: absolute;
-      width: 83px;
-      border-bottom: 1px solid white;
       right: -1px;
-      bottom: -2px;
+      width: 83px;
       color: white;
+      border-bottom: 1px solid white;
+      bottom: -2px;
 
     }
   }

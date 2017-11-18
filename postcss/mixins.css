@@ -5,18 +5,18 @@
 }
 
 @define-mixin secondary-text {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
 }
 
 @define-mixin third-text {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.2;
 }
 
 @define-mixin fourth-text {
-  font-size: 12px;
   font-weight: 400;
+  font-size: 12px;
   line-height: 1.2;
 }

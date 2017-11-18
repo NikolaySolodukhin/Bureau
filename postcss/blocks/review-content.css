@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 308px;
   box-sizing: border-box;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: white;
-  padding-bottom: 7px;
-  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+  width: 308px;
   min-height: 379px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 7px;
+  padding-left: 30px;
+  background-color: white;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
 
   &:nth-child(3n+2) {
     margin-right: 20px;
@@ -22,24 +22,24 @@
   }
 
   &__name {
-    font-size: 22px;
     margin-top: 13px;
     margin-bottom: 1px;
-    line-height: $line-height-basic;
     font-weight: $font-weight-basic;
+    font-size: 22px;
+    line-height: $line-height-basic;
   }
 
   &__company {
     @mixin third-text;
-    line-height: 22px;
     margin-top: 0;
     margin-bottom: 7px;
+    line-height: 22px;
     color: $color-grey-text;
   }
 
   &__text {
     @mixin secondary-text;
-    line-height: 26px;
     margin-top: 0;
+    line-height: 26px;
   }
 }

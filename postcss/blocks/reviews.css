@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
-  padding-left: 120px;
   padding-right: 120px;
+  padding-left: 120px;
+  overflow: hidden;
 
   &__item {
     display: flex;

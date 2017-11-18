@@ -1,33 +1,45 @@
 .contacts {
-  width: 220px;
-  text-align: center;
-  padding-left: 32px;
   position: relative;
+  width: 220px;
   margin-right: 12px;
-  &__number {
-    font-size: 22px;
-    font-weight: $font-weight-basic;
-    line-height: $line-height-basic;
+  padding-left: 32px;
+  text-align: center;
+  &__link {
+
+    &--telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -7px;
     margin-bottom: 0px;
+    font-weight: $font-weight-basic;
+    font-size: 22px;
+    line-height: $line-height-basic;
+    color: black;
+    text-decoration: none;
+
+      &:hover {
+        color: $main-color-lilac;
+      }
+    }
   }
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    background-image: url("..//..//img/spritesheet.png");
-    background-position: 64px 61px;
+    top: -5px;
+    left: -12px;
     width: 27px;
     height: 27px;
-    left: -12px;
-    top: -5px;
+    background-image: url("../../img/spritesheet.png");
+    background-position: 64px 61px;
     cursor: pointer;
   }
 
   &::after {
-    background-position: 101px 94px;
-    left: 24px;
     top: -6px;
+    left: 24px;
+    background-position: 101px 94px;
   }
 }

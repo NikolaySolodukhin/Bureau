@@ -4,29 +4,29 @@
   "private": true,
   "description": "Тестовое задание Digitial Prime",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "0.1.x",
-    "autoprefixer": "6.7.x",
-    "eslint": "3.9.0",
-    "eslint-config-htmlacademy": "0.2.x",
-    "browser-sync": "2.18.8",
-    "css-mqpacker": "^5.0.1",
-    "del": "^2.2.2",
+    "@htmlacademy/editorconfig-cli": "1.0.x",
+    "autoprefixer": "7.1.x",
+    "eslint": "4.11.0",
+    "eslint-config-htmlacademy": "0.3.x",
+    "browser-sync": "2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
     "gulp": "3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.0.8",
     "gulp-csso": "^3.0.0",
     "gulp-gh-pages": "^0.5.4",
     "gulp-html-minifier2": "^1.1.8",
-    "gulp-imagemin": "^3.2.0",
+    "gulp-imagemin": "^4.0.0",
     "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.3.0",
+    "gulp-postcss": "7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "gulp-uglify": "^2.1.2",
-    "normalize.css": "^5.0.0",
-    "precss": "1.4.0",
-    "run-sequence": "^1.2.2"
+    "gulp-uglify": "^3.0.0",
+    "normalize.css": "^7.0.0",
+    "precss": "2.0.0",
+    "run-sequence": "^2.2.0"
   },
   "scripts": {
     "test": "editorconfig-cli",
@@ -36,7 +36,8 @@
     "images": "gulp images",
     "start": "gulp serve",
     "demo": "gulp build && gulp demo",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "server": "gulp serve"
   },
   "editorconfig-cli": [
     "*.html",
@@ -50,6 +51,6 @@
     "node": "6.10"
   },
   "dependencies": {
-    "del": "^2.2.2"
+    "del": "^3.0.0"
   }
 }

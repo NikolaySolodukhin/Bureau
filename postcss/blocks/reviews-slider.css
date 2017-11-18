@@ -10,25 +10,25 @@
     @mixin main-text;
     margin-top: 54px;
     margin-right: 5px;
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__toggle {
     position: absolute;
     top: 48%;
-    width: 1200px;
     display: flex;
     justify-content: space-between;
+    width: 1200px;
   }
 
   &__button {
     position: relative;
-    border: none;
     width: 52px;
     height: 52px;
-    border-radius: 100%;
     background-color: #efe9fa;
+    border: none;
+    border-radius: 100%;
 
     &::after {
       content: "";

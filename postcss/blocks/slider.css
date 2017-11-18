@@ -1,7 +1,7 @@
 .slider {
 
   &__inner {
-    padding-top: 58px;
     position: relative;
+    padding-top: 58px;
   }
 }
