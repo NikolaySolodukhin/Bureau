@@ -43,6 +43,18 @@ gulp.task('style', function() {
       return Promise.resolve();
     }
   };
+  var opts2x = {
+    stylesheetPath: './css',
+    spritePath: './img/sprite@2x/',
+    retina: true,
+    filterBy: function(image) {
+      if (!/\/img\/sprite@2x\//.test(image.url)) {
+        return Promise.reject();
+      }
+      return Promise.resolve();
+    }
+  };
+
   return gulp.src('postcss/style.css')
     .pipe(plumber())
     .pipe(postcss([
@@ -56,7 +68,8 @@ gulp.task('style', function() {
         ]
       }),
       flexbugsFixes(),
-      sprites(opts)
+      sprites(opts),
+      sprites(opts2x),
     ]))
     .pipe(csscomb('./.csscomb.json'))
     .pipe(csso({
@@ -80,6 +93,17 @@ gulp.task('style:dev', function() {
       return Promise.resolve();
     }
   };
+  var opts2x = {
+    stylesheetPath: './css',
+    spritePath: './img/sprite@2x/',
+    retina: true,
+    filterBy: function(image) {
+      if (!/\/img\/sprite@2x\//.test(image.url)) {
+        return Promise.reject();
+      }
+      return Promise.resolve();
+    }
+  };
   var processors = [
     precss(),
     mqpacker({
@@ -91,7 +115,8 @@ gulp.task('style:dev', function() {
       ]
     }),
     flexbugsFixes(),
-    sprites(opts)
+    sprites(opts),
+    sprites(opts2x),
   ];
   return gulp.src('postcss/style.css')
     .pipe(plumber())

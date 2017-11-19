@@ -49,15 +49,15 @@
         position: absolute;
         width: 22px;
         height: 23px;
-        cursor: pointer;
         background-repeat: no-repeat;
+        cursor: pointer;
       }
     }
 
     &--vk {
       &::before {
         top: 14px;
-        left: 51px;
+        left: 55px;
         background-image: url("../img/sprite/vk.png");
 
         @media (--retina) {
@@ -68,8 +68,8 @@
 
     &--fb {
       &::before {
-        top: 12px;
-        left: 55px;
+        top: 14px;
+        left: 60px;
         background-image: url("../img/sprite/fb.png");
 
         @media (--retina) {
@@ -80,8 +80,8 @@
 
     &--linkedIn {
       &::before {
-        top: 12px;
-        left: 60px;
+        top: 14px;
+        left: 66px;
         background-image: url("../img/sprite/in.png");
 
         @media (--retina) {
@@ -92,8 +92,8 @@
 
     &--instagram {
       &::before {
-        top: 11px;
-        left: 58px;
+        top: 14px;
+        left: 60px;
         background-image: url("../img/sprite/ig.png");
 
         @media (--retina) {
@@ -104,8 +104,8 @@
 
     &--twitter {
       &::before {
-        top: 12px;
-        left: 61px;
+        top: 14px;
+        left: 69px;
         background-image: url("../img/sprite/tw.png");
 
         @media (--retina) {

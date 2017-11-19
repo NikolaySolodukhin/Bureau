@@ -1,8 +1,8 @@
 .contacts {
   position: relative;
-  width: 220px;
-  margin-right: 12px;
-  padding-left: 32px;
+  display: flex;
+  width: 241px;
+  margin-right: 44px;
   text-align: center;
   &__link {
 
@@ -22,24 +22,32 @@
         color: $main-color-lilac;
       }
     }
-  }
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -12px;
-    width: 27px;
-    height: 27px;
-    background-image: url("../../img/spritesheet.png");
-    background-position: 64px 61px;
-    cursor: pointer;
-  }
+    &--whatsup,
+    &--telegramm {
+      display: inline-flex;
+      width: 27px;
+      height: 27px;
+      background-repeat: no-repeat;
+      margin-top: -4px;
+    }
 
-  &::after {
-    top: -6px;
-    left: 24px;
-    background-position: 101px 94px;
+    &--whatsup {
+      background-image: url("../img/sprite@2x/icon-whatsup@2x.png");
+
+      &:hover {
+        background-image: url("../img/sprite@2x/icon-whatsup--hover@2x.png");
+      }
+    }
+
+    &--telegramm {
+      background-image: url("../img/sprite@2x/icon-telegramm@2x.png");
+      margin-right: 5px;
+      margin-left: 11px;
+
+      &:hover {
+        background-image: url("../img/sprite@2x/icon-telegramm--hover@2x.png");
+      }
+    }
   }
 }
