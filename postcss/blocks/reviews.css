@@ -1,15 +1,12 @@
 .reviews {
   display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
-  padding-left: 120px;
   padding-right: 120px;
+  padding-left: 120px;
 
-  &__item {
+
+  &__list {
     display: flex;
-
-    &--hidden {
-      display: none;
-    }
+    width: 100%;
+    box-shadow: 3px 4px 40px 0px rgba(20, 21, 29, 0.08);
   }
 }

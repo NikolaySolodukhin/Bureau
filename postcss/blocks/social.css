@@ -2,12 +2,12 @@
   padding-bottom: 45px;
 
   &__title {
+    margin-top: 37px;
+    margin-bottom: 25px;
+    font-weight: $font-weight-basic;
     font-size: 28px;
     line-height: $line-height-basic;
-    font-weight: $font-weight-basic;
-    margin-top: 37px;
     text-align: center;
-    margin-bottom: 25px;
   }
 
   &__list {
@@ -17,19 +17,24 @@
 
   &__link {
     @mixin fourth-text;
+    position: relative;
     display: block;
-    width: 222px;
-    padding-bottom: 15px;
-    padding-top: 20px;
-    padding-left: 35px;
     box-sizing: border-box;
+    width: 222px;
+    margin-right: 13px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    text-align: center;
     color: $color-grey-text;
     text-transform: uppercase;
     text-decoration: none;
-    position: relative;
     border: 1px solid #ebebeb;
-    margin-right: 13px;
-    text-align: center;
+
+    &:hover,
+    &:focus {
+      border: 1px solid #a9a7a7;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -43,50 +48,70 @@
       &::before {
         content: "";
         position: absolute;
-        background-image: url("..//..//img/spritesheet.png");
+        width: 22px;
+        height: 23px;
+        background-repeat: no-repeat;
         cursor: pointer;
-        width: 27px;
-        height: 27px;
       }
     }
 
     &--vk {
       &::before {
-        background-position: 31px 28px;
-        left: 51px;
         top: 14px;
+        left: 55px;
+        background-image: url("../img/sprite/vk.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/vk@2x.png");
+        }
       }
     }
 
     &--fb {
       &::before {
-        background-position: 36px -3px;
-        top: 12px;
-        left: 55px;
+        top: 14px;
+        left: 60px;
+        background-image: url("../img/sprite/fb.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/fb@2x.png");
+        }
       }
     }
 
     &--linkedIn {
       &::before {
-        background-position: -37px -3px;
-        top: 12px;
-        left: 60px;
+        top: 14px;
+        left: 66px;
+        background-image: url("../img/sprite/in.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/in@2x.png");
+        }
       }
     }
 
     &--instagram {
       &::before {
-        background-position: 29px -35px;
-        top: 11px;
-        left: 58px;
+        top: 14px;
+        left: 60px;
+        background-image: url("../img/sprite/ig.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/ig@2x.png");
+        }
       }
     }
 
     &--twitter {
       &::before {
-        background-position: 1px 30px;
-        top: 12px;
-        left: 61px;
+        top: 14px;
+        left: 69px;
+        background-image: url("../img/sprite/tw.png");
+
+        @media (--retina) {
+          background-image: url("../img/sprite@2x/tw@2x.png");
+        }
       }
     }
 

@@ -10,7 +10,6 @@
 @import "blocks/contacts.css";
 @import "blocks/user-block.css";
 
-@import "blocks/page-content.css";
 @import "blocks/hero.css";
 @import "blocks/btn.css";
 @import "blocks/feature.css";
@@ -27,3 +26,4 @@
 
 @import "blocks/page-footer.css";
 @import "blocks/footer-navigation.css";
+@import "blocks/swiper.css";

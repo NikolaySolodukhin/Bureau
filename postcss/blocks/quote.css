@@ -1,12 +1,6 @@
 .quote {
   display: flex;
-  margin-left: 153px;
-  margin-right: 153px;
-  min-height: 507px;
-
-  &--hidden {
-    display: none;
-  }
+  min-height: 506px;
 
   &__content,
   &__person {
@@ -32,11 +26,11 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: -22px;
+      left: 1px;
       width: 37px;
       height: 3px;
-      left: 1px;
       background-color: $main-color-lilac;
+      bottom: -22px;
     }
   }
   &__text {
@@ -44,7 +38,7 @@
     line-height: 26px;
   }
   &__cite {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }

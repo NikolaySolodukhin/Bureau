@@ -1,12 +1,12 @@
 .teacher {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
 
   &__title {
     @mixin main-text;
-    text-align: center;
-    padding-top: 52px;
     margin-top: 0;
     margin-bottom: 47px;
+    padding-top: 52px;
+    text-align: center;
   }
 
   &__list {
@@ -15,43 +15,69 @@
   }
 
   &__item {
+    min-height: 392px;
     margin-right: 20px;
     margin-bottom: 32px;
+    border-radius: 3px;
+    opacity: 1;
 
     &:nth-child(4n) {
       margin-right: 0;
     }
-
   }
 
   &__name {
-    font-size: 20px;
-    font-weight: $font-weight-basic;
-    line-height: $line-height-basic;
-    margin-left: 29px;
     margin-bottom: 5px;
+    margin-left: 29px;
+    font-weight: $font-weight-basic;
+    font-size: 20px;
+    line-height: $line-height-basic;
+    color: black;
+
+    &:hover {
+      color: $main-color-lilac;
+    }
+  }
+
+  &__link {
+    display: block;
+    min-height: 392px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.08);
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.16);
+      opacity: 0.9;
+    }
   }
 
   &__status {
     @mixin third-text;
-    color: $color-grey-text;
-    margin-left: 30px;
+    width: 225px;
     margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    padding-bottom: 15px;
+    color: $color-grey-text;
   }
 
   &__selection {
     @mixin third-text;
+    margin-top: 17px;
     margin-right: auto;
+    margin-bottom: 57px;
     margin-left: auto;
     padding-top: 16px;
+    padding-right: 44px;
     padding-bottom: 16px;
     padding-left: 30px;
-    padding-right: 44px;
-    margin-top: 17px;
-    border: 1px solid $main-color-lilac;
-    background-color: white;
-    margin-bottom: 57px;
-    cursor: pointer;
     color: $main-color-lilac;
+    background-color: white;
+    border: 1px solid $main-color-lilac;
+    border-radius: 3px;
+    cursor: pointer;
   }
 }

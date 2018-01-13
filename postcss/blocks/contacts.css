@@ -1,33 +1,56 @@
 .contacts {
-  width: 220px;
-  text-align: center;
-  padding-left: 32px;
   position: relative;
-  margin-right: 12px;
-  &__number {
-    font-size: 22px;
-    font-weight: $font-weight-basic;
-    line-height: $line-height-basic;
+  display: flex;
+  width: 241px;
+  margin-right: 44px;
+  text-align: center;
+  &__link {
+
+    &--telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: -7px;
     margin-bottom: 0px;
-  }
+    font-weight: $font-weight-basic;
+    font-size: 22px;
+    line-height: $line-height-basic;
+    color: black;
+    text-decoration: none;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("..//..//img/spritesheet.png");
-    background-position: 64px 61px;
-    width: 27px;
-    height: 27px;
-    left: -12px;
-    top: -5px;
-    cursor: pointer;
-  }
+      &:hover,
+      &:focus {
+        color: $main-color-lilac;
+      }
+    }
 
-  &::after {
-    background-position: 101px 94px;
-    left: 24px;
-    top: -6px;
+    &--whatsup,
+    &--telegramm {
+      display: inline-flex;
+      width: 27px;
+      height: 27px;
+      margin-top: -4px;
+      background-repeat: no-repeat;
+    }
+
+    &--whatsup {
+      background-image: url("../img/sprite@2x/icon-whatsup@2x.png");
+
+      &:hover,
+      &:focus {
+        background-image: url("../img/sprite@2x/icon-whatsup--hover@2x.png");
+      }
+    }
+
+    &--telegramm {
+      margin-right: 5px;
+      margin-left: 11px;
+      background-image: url("../img/sprite@2x/icon-telegramm@2x.png");
+
+      &:hover,
+      &:focus {
+        background-image: url("../img/sprite@2x/icon-telegramm--hover@2x.png");
+      }
+    }
   }
 }

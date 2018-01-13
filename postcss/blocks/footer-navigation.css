@@ -1,9 +1,9 @@
 .footer-navigation {
   width: 880px;
   &__list {
-    list-style: none;
-    padding-left: 0;
     display: flex;
+    padding-left: 0;
+    list-style: none;
   }
 
   &__item {
@@ -18,5 +18,10 @@
     @mixin third-text;
     color: black;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color:#6b2ee5;
+    }
   }
 }

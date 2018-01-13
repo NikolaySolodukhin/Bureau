@@ -7,6 +7,7 @@
     padding-top: 12px;
     padding-bottom: 14px;
     text-align: center;
+    color: $main-color-lilac;
     border: 1px solid $main-color-lilac;
   }
 }

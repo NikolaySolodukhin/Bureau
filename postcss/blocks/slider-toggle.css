@@ -1,9 +1,9 @@
 .slider-toggle {
   position: absolute;
   top: 48%;
-  width: 1200px;
   display: flex;
   justify-content: space-between;
+  width: 1200px;
 
   &--correct-position {
     top: 44%;
@@ -11,14 +11,16 @@
 
   &__button {
     position: relative;
-    border: none;
+    z-index: 10;
     width: 52px;
     height: 52px;
-    border-radius: 100%;
     background-color: #efe9fa;
+    border: none;
+    border-radius: 100%;
 
-    &:hover {
-      background-color: #5f29cc;
+    &:hover,
+    &:focus {
+      background-color: $main-color-lilac;
       &::after {
         border-right: 2px solid white;
         border-bottom: 2px solid white;

@@ -10,3 +10,5 @@ node_modules/
 build/
 Thumbs.db
 .publish
+img/sprite/sprite.png
+img/sprite@2x/sprite.2@x.png
