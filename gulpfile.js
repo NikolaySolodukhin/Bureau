@@ -56,7 +56,7 @@ gulp.task('style', function() {
     }
   };
 
-  return gulp
+  return (gulp
     .src('postcss/style.css')
     .pipe(plumber())
     .pipe(
@@ -70,7 +70,7 @@ gulp.task('style', function() {
         }),
         flexbugsFixes(),
         sprites(opts),
-        sprites(opts2x),
+        sprites(opts2x)
       ])
     )
     .pipe(csscomb('./csscomb.json'))
@@ -84,7 +84,7 @@ gulp.task('style', function() {
         comments: false
       })
     )
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build/css')) );
 });
 
 gulp.task('style:dev', function() {
@@ -101,6 +101,9 @@ gulp.task('style:dev', function() {
   var opts2x = {
     stylesheetPath: './css',
     spritePath: './img/sprite@2x/',
+    spritesmith: {
+      padding: 5
+    },
     retina: true,
     filterBy: function(image) {
       if (!/\/img\/sprite@2x\//.test(image.url)) {

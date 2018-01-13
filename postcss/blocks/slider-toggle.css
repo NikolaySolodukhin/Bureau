@@ -11,6 +11,7 @@
 
   &__button {
     position: relative;
+    z-index: 10;
     width: 52px;
     height: 52px;
     background-color: #efe9fa;

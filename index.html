@@ -229,36 +229,34 @@
       <div class="reviews-slider__wrapper container">
         <h2 class="reviews-slider__title">Истории успеха</h2>
         <div class="slider-toggle">
-          <button class="slider-toggle__button slider-toggle__button--prev"></button>
-          <button class="slider-toggle__button slider-toggle__button--next slider-toggle__button--rotate"></button>
+          <button class="slider-toggle__button slider-toggle__button--prev swiper-button-prev"></button>
+          <button class="slider-toggle__button slider-toggle__button--next slider-toggle__button--rotate swiper-button-next"></button>
         </div>
         <div class="reviews">
-          <div class="reviews__list">
-            <section class="reviews__item reviews__item--hidden">
-              <div class="review-content">
+          <div class="reviews__list swiper-container">
+            <div class="swiper-wrapper">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
                 <h3 class="review-content__name"></h3>
                 <p class="review-content__company"></p>
                 <p class="review-content__text"></p>
               </div>
 
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
                 <h3 class="review-content__name"></h3>
                 <p class="review-content__company"></p>
                 <p class="review-content__text"></p>
               </div>
 
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
                 <h3 class="review-content__name"></h3>
                 <p class="review-content__company"></p>
                 <p class="review-content__text"></p>
               </div>
-            </section>
 
-            <section class="reviews__item">
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="img/icon-Krylova@1x.png" srcset="img/icon-Krylova@2x.png 2x, img/icon-Krylova@1x.png 1x"
                   width="100" height="101" alt="Александра Крылова">
                 <h3 class="review-content__name">Александра Крылова</h3>
@@ -267,7 +265,7 @@
                   пользовалось более 60&nbsp;млн.</p>
               </div>
 
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="img/icon-Tavrin@1x.png" srcset="img/icon-Tavrin@2x.png 2x, img/icon-Tavrin@1x.png 1x"
                   width="100" height="101" alt="Иван Таврин">
                 <h3 class="review-content__name">Иван Таврин</h3>
@@ -276,7 +274,7 @@
                   агенство &laquo;Констракт&raquo;.</p>
               </div>
 
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="img/icon-Voinov@1x.png" srcset="img/icon-Voinov@2x.png 2x, img/icon-Voinov@1x.png 1x"
                   width="100" height="101" alt="Семён Воинов">
                 <h3 class="review-content__name">Семён Воинов</h3>
@@ -284,31 +282,28 @@
                 <p class="review-content__text">Игра Cut the Rope, созданная компанией Zeptolab братьев Воиновых, продолжает завоёвывать мир. В&nbsp;этом
                   году она вышла на&nbsp;перспективный рынок Индии.</p>
               </div>
-            </section>
 
-            <section class="reviews__item reviews__item--hidden">
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
                 <h3 class="review-content__name"></h3>
                 <p class="review-content__company"></p>
                 <p class="review-content__text"></p>
               </div>
 
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
                 <h3 class="review-content__name"></h3>
                 <p class="review-content__company"></p>
                 <p class="review-content__text"></p>
               </div>
 
-              <div class="review-content">
+              <div class="review-content swiper-slide">
                 <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
                 <h3 class="review-content__name"></h3>
                 <p class="review-content__company"></p>
                 <p class="review-content__text"></p>
               </div>
-            </section>
-
+            </div>
           </div>
         </div>
       </div>
@@ -415,48 +410,51 @@
     <section class="slider">
       <div class="slider__inner container">
         <div class="slider-toggle slider-toggle--correct-position">
-          <button class="slider-toggle__button slider-toggle__button--prev "></button>
-          <button class="slider-toggle__button slider-toggle__button--next slider-toggle__button--rotate"></button>
+          <button class="slider-toggle__button slider-toggle__button--prev swiper-button-prev-quote"></button>
+          <button class="slider-toggle__button slider-toggle__button--next swiper-button-next-quote slider-toggle__button--rotate"></button>
         </div>
-        <div class="slider__list">
-          <article class="quote quote--hidden">
-            <div class="quote__content">
-              <h2 class="quote__name"></h2>
-              <blockquote class="quote__cite" cite="#">
-                <p class="quote__text"></p>
-              </blockquote>
-            </div>
-            <div class="quote__person">
-              <img class="quote__photo" src="#" srcset="#" width="295" height="506" alt="#">
-            </div>
-          </article>
 
-          <article class="quote">
-            <div class="quote__content">
-              <h2 class="quote__name">Олег Тиньков</h2>
-              <blockquote class="quote__cite" cite="https://www.tinkoff.ru/about/management">
-                <p class="quote__text">Совет директоров прислушивается к&nbsp;моему мнению не из-за наличия или отсуствия у&nbsp;меня доли, а&nbsp;потому,
-                  что я&nbsp;создал эту сеть и&nbsp;понимаю ее&nbsp;глубинные механизмы. Я&nbsp;никуда не&nbsp;ухожу и&nbsp;собираюсь
-                  продолжить следить за качеством.</p>
-              </blockquote>
-            </div>
-            <div class="quote__person">
-              <img class="quote__photo" src="img/Tinkoff@1x.png" srcset="img/Tinkoff@2x.png 2x, img/Tinkoff@1x.png 1x" width="295" height="506"
-                alt="Олег Тиньков">
-            </div>
-          </article>
+        <div class="slider__list swiper-container-quote">
+          <div class="swiper-wrapper">
+            <article class="quote swiper-slide">
+              <div class="quote__content">
+                <h2 class="quote__name"></h2>
+                <blockquote class="quote__cite" cite="#">
+                  <p class="quote__text"></p>
+                </blockquote>
+              </div>
+              <div class="quote__person">
+                <img class="quote__photo" src="#" srcset="#" width="295" height="506" alt="#">
+              </div>
+            </article>
 
-          <article class="quote quote--hidden">
-            <div class="quote__content">
-              <h2 class="quote__name"></h2>
-              <blockquote class="quote__cite" cite="#">
-                <p class="quote__text"></p>
-              </blockquote>
-            </div>
-            <div class="quote__person">
-              <img class="quote__photo" src="#" srcset="#" width="295" height="506" alt="#">
-            </div>
-          </article>
+            <article class="quote swiper-slide">
+              <div class="quote__content">
+                <h2 class="quote__name">Олег Тиньков</h2>
+                <blockquote class="quote__cite" cite="https://www.tinkoff.ru/about/management">
+                  <p class="quote__text">Совет директоров прислушивается к&nbsp;моему мнению не из-за наличия или отсуствия у&nbsp;меня доли, а&nbsp;потому,
+                    что я&nbsp;создал эту сеть и&nbsp;понимаю ее&nbsp;глубинные механизмы. Я&nbsp;никуда не&nbsp;ухожу и&nbsp;собираюсь
+                    продолжить следить за качеством.</p>
+                </blockquote>
+              </div>
+              <div class="quote__person">
+                <img class="quote__photo" src="img/Tinkoff@1x.png" srcset="img/Tinkoff@2x.png 2x, img/Tinkoff@1x.png 1x" width="295" height="506"
+                  alt="Олег Тиньков">
+              </div>
+            </article>
+
+            <article class="quote swiper-slide">
+              <div class="quote__content">
+                <h2 class="quote__name"></h2>
+                <blockquote class="quote__cite" cite="#">
+                  <p class="quote__text"></p>
+                </blockquote>
+              </div>
+              <div class="quote__person">
+                <img class="quote__photo" src="#" srcset="#" width="295" height="506" alt="#">
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
