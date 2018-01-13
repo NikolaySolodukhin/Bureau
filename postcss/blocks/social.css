@@ -31,7 +31,8 @@
     text-decoration: none;
     border: 1px solid #ebebeb;
 
-    &:hover {
+    &:hover,
+    &:focus {
       border: 1px solid #a9a7a7;
     }
 

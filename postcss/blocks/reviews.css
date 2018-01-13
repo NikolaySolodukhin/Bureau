@@ -8,6 +8,7 @@
 
   &__item {
     display: flex;
+    margin-bottom: 10px;
 
     &--hidden {
       display: none;

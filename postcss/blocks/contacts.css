@@ -18,7 +18,8 @@
     color: black;
     text-decoration: none;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: $main-color-lilac;
       }
     }
@@ -28,24 +29,26 @@
       display: inline-flex;
       width: 27px;
       height: 27px;
-      background-repeat: no-repeat;
       margin-top: -4px;
+      background-repeat: no-repeat;
     }
 
     &--whatsup {
       background-image: url("../img/sprite@2x/icon-whatsup@2x.png");
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-image: url("../img/sprite@2x/icon-whatsup--hover@2x.png");
       }
     }
 
     &--telegramm {
-      background-image: url("../img/sprite@2x/icon-telegramm@2x.png");
       margin-right: 5px;
       margin-left: 11px;
+      background-image: url("../img/sprite@2x/icon-telegramm@2x.png");
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-image: url("../img/sprite@2x/icon-telegramm--hover@2x.png");
       }
     }
