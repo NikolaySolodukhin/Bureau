@@ -138,7 +138,7 @@ gulp.task('style:dev', function() {
 
 gulp.task('htmlminify', function() {
   return gulp
-    .src('*.html')
+    .src('build/index.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build/'));
 });
@@ -275,7 +275,7 @@ gulp.task('serve', ['clean:dev', 'style:dev'], function() {
 });
 
 gulp.task('build', function(fn) {
-  run('clean', ['copy', 'style', 'htmlminify', 'jsmin'], fn);
+  run('clean', ['copy', 'style', 'jsmin'], 'critical', 'htmlminify', fn);
 });
 
 gulp.task('demo', function() {
