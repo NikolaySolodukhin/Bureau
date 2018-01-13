@@ -5,31 +5,31 @@
   "description": "Тестовое задание Digitial Prime",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.x",
-    "autoprefixer": "7.1.x",
-    "browser-sync": "2.18.13",
+    "autoprefixer": "7.2.x",
+    "browser-sync": "2.23.5",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
-    "eslint": "4.11.0",
-    "eslint-config-htmlacademy": "0.3.x",
+    "eslint": "4.15.0",
+    "eslint-config-htmlacademy": "0.4.x",
     "gulp": "3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.0.8",
-    "gulp-csso": "^3.0.0",
+    "gulp-csso": "^3.0.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-html-minifier2": "^1.1.8",
-    "gulp-imagemin": "^4.0.0",
-    "gulp-plumber": "1.1.0",
-    "gulp-postcss": "7.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "1.2.0",
+    "gulp-postcss": "7.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-svgmin": "^1.2.3",
-    "gulp-svgstore": "^6.1.0",
+    "gulp-sourcemaps": "^2.6.3",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "normalize.css": "^7.0.0",
     "postcss-flexbugs-fixes": "^3.2.0",
     "postcss-sprites": "^4.2.1",
     "precss": "2.0.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.1"
   },
   "scripts": {
     "test": "editorconfig-cli",
@@ -54,6 +54,7 @@
     "node": "6.10"
   },
   "dependencies": {
+    "critical": "^1.1.0",
     "del": "^3.0.0"
   }
 }

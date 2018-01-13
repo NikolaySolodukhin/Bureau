@@ -6,6 +6,11 @@
   padding-left: 120px;
   overflow: hidden;
 
+
+  &__list {
+    display: flex;
+    width: 100%;
+  }
   &__item {
     display: flex;
     margin-bottom: 10px;

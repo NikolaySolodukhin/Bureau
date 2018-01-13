@@ -5,9 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Тестовое задание в Digitial Prime</title>
   <meta name="robots" content="index, follow">
   <meta name="author" content="Nikolay Solodukhin">
+  <title>Тестовое задание в Digitial Prime</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="img/bg/bg-hero@2x.jpg" as="image" media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)">
+  <link rel="preload" href="img/bg/bg-promo@2x.jpg" as="image" media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)">
+  <link rel="preload" href="img/bg/bg-hero@1x.jpg" as="image">
+  <link rel="preload" href="img/bg/bg-promo@1x.jpg" as="image">
+  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="js/utils.js" as="script">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -161,8 +169,8 @@
 
           <div class="teacher__item">
             <a class="teacher__link" href="#">
-              <img class="teacher__img" src="img/people/expert-Mann@1x.jpg" srcset="img/people/expert-Mann@2x.jpg 2x, img/people/expert-Mann@1x.jpg 1x" width="285"
-                height="310" alt="Игорь Манн">
+              <img class="teacher__img" src="img/people/expert-Mann@1x.jpg" srcset="img/people/expert-Mann@2x.jpg 2x, img/people/expert-Mann@1x.jpg 1x"
+                width="285" height="310" alt="Игорь Манн">
               <h3 class="teacher__name">Игорь Манн</h3>
               <p class="teacher__status">Эксперт, Спикер</p>
             </a>
@@ -179,8 +187,8 @@
 
           <div class="teacher__item">
             <a class="teacher__link" href="">
-              <img class="teacher__img" src="img/people/mentor-Gekko@1x.jpg" srcset="img/people/mentor-Gekko@2x.jpg 2x, img/people/mentor-Gekko@1x.jpg 1x" width="285"
-                height="310" alt="Гордон Гекко">
+              <img class="teacher__img" src="img/people/mentor-Gekko@1x.jpg" srcset="img/people/mentor-Gekko@2x.jpg 2x, img/people/mentor-Gekko@1x.jpg 1x"
+                width="285" height="310" alt="Гордон Гекко">
               <h3 class="teacher__name">Гордон Гекко</h3>
               <p class="teacher__status">Ментор</p>
             </a>
@@ -188,8 +196,8 @@
 
           <div class="teacher__item">
             <a class="teacher__link" href="#">
-              <img class="teacher__img" src="img/people/mentor-Gates@1x.jpg" srcset="img/people/mentor-Gates@2x.jpg 2x, img/people/mentor-Gates@1x.jpg 1x" width="285"
-                height="310" alt="Билл Гейтс">
+              <img class="teacher__img" src="img/people/mentor-Gates@1x.jpg" srcset="img/people/mentor-Gates@2x.jpg 2x, img/people/mentor-Gates@1x.jpg 1x"
+                width="285" height="310" alt="Билл Гейтс">
               <h3 class="teacher__name">Билл Гейтс</h3>
               <p class="teacher__status">Ментор</p>
             </a>
@@ -197,8 +205,8 @@
 
           <div class="teacher__item">
             <a class="teacher__link" href="#">
-              <img class="teacher__img" src="img/people/expert-Koch@1x.jpg" srcset="img/people/expert-Koch@2x.jpg 2x, img/people/expert-Koch@1x.jpg 1x" width="285"
-                height="310" alt="Чарльз Кох">
+              <img class="teacher__img" src="img/people/expert-Koch@1x.jpg" srcset="img/people/expert-Koch@2x.jpg 2x, img/people/expert-Koch@1x.jpg 1x"
+                width="285" height="310" alt="Чарльз Кох">
               <h3 class="teacher__name">Чарльз Кох</h3>
               <p class="teacher__status">Эксперт</p>
             </a>
@@ -225,82 +233,83 @@
           <button class="slider-toggle__button slider-toggle__button--next slider-toggle__button--rotate"></button>
         </div>
         <div class="reviews">
+          <div class="reviews__list">
+            <section class="reviews__item reviews__item--hidden">
+              <div class="review-content">
+                <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
+                <h3 class="review-content__name"></h3>
+                <p class="review-content__company"></p>
+                <p class="review-content__text"></p>
+              </div>
 
-          <section class="reviews__item">
-            <div class="review-content">
-              <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
-              <h3 class="review-content__name"></h3>
-              <p class="review-content__company"></p>
-              <p class="review-content__text"></p>
-            </div>
+              <div class="review-content">
+                <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
+                <h3 class="review-content__name"></h3>
+                <p class="review-content__company"></p>
+                <p class="review-content__text"></p>
+              </div>
 
-            <div class="review-content">
-              <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
-              <h3 class="review-content__name"></h3>
-              <p class="review-content__company"></p>
-              <p class="review-content__text"></p>
-            </div>
+              <div class="review-content">
+                <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
+                <h3 class="review-content__name"></h3>
+                <p class="review-content__company"></p>
+                <p class="review-content__text"></p>
+              </div>
+            </section>
 
-            <div class="review-content">
-              <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
-              <h3 class="review-content__name"></h3>
-              <p class="review-content__company"></p>
-              <p class="review-content__text"></p>
-            </div>
-          </section>
+            <section class="reviews__item">
+              <div class="review-content">
+                <img class="review-content__img" src="img/icon-Krylova@1x.png" srcset="img/icon-Krylova@2x.png 2x, img/icon-Krylova@1x.png 1x"
+                  width="100" height="101" alt="Александра Крылова">
+                <h3 class="review-content__name">Александра Крылова</h3>
+                <p class="review-content__company">Telegram</p>
+                <p class="review-content__text">Год назад месячная аудитория Telegra составляла 35&nbsp;млн юзеров, а&nbsp;летом 2015 года мессенджером уже
+                  пользовалось более 60&nbsp;млн.</p>
+              </div>
 
-          <section class="reviews__item">
-            <div class="review-content">
-              <img class="review-content__img" src="img/icon-Krylova@1x.png" srcset="img/icon-Krylova@2x.png 2x, img/icon-Krylova@1x.png 1x"
-                width="100" height="101" alt="Александра Крылова">
-              <h3 class="review-content__name">Александра Крылова</h3>
-              <p class="review-content__company">Telegram</p>
-              <p class="review-content__text">Год назад месячная аудитория Telegra составляла 35&nbsp;млн юзеров, а&nbsp;летом 2015 года мессенджером уже
-                пользовалось более 60&nbsp;млн.</p>
-            </div>
+              <div class="review-content">
+                <img class="review-content__img" src="img/icon-Tavrin@1x.png" srcset="img/icon-Tavrin@2x.png 2x, img/icon-Tavrin@1x.png 1x"
+                  width="100" height="101" alt="Иван Таврин">
+                <h3 class="review-content__name">Иван Таврин</h3>
+                <p class="review-content__company">«ЮТВ Холдинг», USM Holdings</p>
+                <p class="review-content__text">В&nbsp;1996 году студент международно-правового факультета МГИМО Иван Таврин учредил вместе с другом рекламное
+                  агенство &laquo;Констракт&raquo;.</p>
+              </div>
 
-            <div class="review-content">
-              <img class="review-content__img" src="img/icon-Tavrin@1x.png" srcset="img/icon-Tavrin@2x.png 2x, img/icon-Tavrin@1x.png 1x"
-                width="100" height="101" alt="Иван Таврин">
-              <h3 class="review-content__name">Иван Таврин</h3>
-              <p class="review-content__company">«ЮТВ Холдинг», USM Holdings</p>
-              <p class="review-content__text">В&nbsp;1996 году студент международно-правового факультета МГИМО Иван Таврин учредил вместе с другом рекламное
-                агенство &laquo;Констракт&raquo;.</p>
-            </div>
+              <div class="review-content">
+                <img class="review-content__img" src="img/icon-Voinov@1x.png" srcset="img/icon-Voinov@2x.png 2x, img/icon-Voinov@1x.png 1x"
+                  width="100" height="101" alt="Семён Воинов">
+                <h3 class="review-content__name">Семён Воинов</h3>
+                <p class="review-content__company">Zeptolab</p>
+                <p class="review-content__text">Игра Cut the Rope, созданная компанией Zeptolab братьев Воиновых, продолжает завоёвывать мир. В&nbsp;этом
+                  году она вышла на&nbsp;перспективный рынок Индии.</p>
+              </div>
+            </section>
 
-            <div class="review-content">
-              <img class="review-content__img" src="img/icon-Voinov@1x.png" srcset="img/icon-Voinov@2x.png 2x, img/icon-Voinov@1x.png 1x"
-                width="100" height="101" alt="Семён Воинов">
-              <h3 class="review-content__name">Семён Воинов</h3>
-              <p class="review-content__company">Zeptolab</p>
-              <p class="review-content__text">Игра Cut the Rope, созданная компанией Zeptolab братьев Воиновых, продолжает завоёвывать мир. В&nbsp;этом году
-                она вышла на&nbsp;перспективный рынок Индии.</p>
-            </div>
-          </section>
+            <section class="reviews__item reviews__item--hidden">
+              <div class="review-content">
+                <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
+                <h3 class="review-content__name"></h3>
+                <p class="review-content__company"></p>
+                <p class="review-content__text"></p>
+              </div>
 
-          <section class="reviews__item">
-            <div class="review-content">
-              <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
-              <h3 class="review-content__name"></h3>
-              <p class="review-content__company"></p>
-              <p class="review-content__text"></p>
-            </div>
+              <div class="review-content">
+                <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
+                <h3 class="review-content__name"></h3>
+                <p class="review-content__company"></p>
+                <p class="review-content__text"></p>
+              </div>
 
-            <div class="review-content">
-              <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
-              <h3 class="review-content__name"></h3>
-              <p class="review-content__company"></p>
-              <p class="review-content__text"></p>
-            </div>
+              <div class="review-content">
+                <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
+                <h3 class="review-content__name"></h3>
+                <p class="review-content__company"></p>
+                <p class="review-content__text"></p>
+              </div>
+            </section>
 
-            <div class="review-content">
-              <img class="review-content__img" src="#" srcset="#" width="100" height="101" alt="#">
-              <h3 class="review-content__name"></h3>
-              <p class="review-content__company"></p>
-              <p class="review-content__text"></p>
-            </div>
-          </section>
-
+          </div>
         </div>
       </div>
     </section>
@@ -323,14 +332,14 @@
           </li>
           <li class="partner__item">
             <a class="partner__link" href="http://www.skoda-avto.ru/">
-              <img class="partner__logo" src="img/partners/icon-Skoda@1x.png" srcset="img/partners/icon-Skoda@2x.png 2x, img/partners/icon-Skoda@1x.png 1x" width="74"
-                height="74" alt="Skoda" />
+              <img class="partner__logo" src="img/partners/icon-Skoda@1x.png" srcset="img/partners/icon-Skoda@2x.png 2x, img/partners/icon-Skoda@1x.png 1x"
+                width="74" height="74" alt="Skoda" />
             </a>
           </li>
           <li class="partner__item">
             <a class="partner__link partner__link--ford" href="http://www.ford.ru/">
-              <img class="partner__logo" src="img/partners/icon-Ford@1x.png" srcset="img/partners/icon-Ford@2x.png 2x, img/partners/icon-Ford@1x.png 1x" width="117"
-                height="45" alt="Ford" />
+              <img class="partner__logo" src="img/partners/icon-Ford@1x.png" srcset="img/partners/icon-Ford@2x.png 2x, img/partners/icon-Ford@1x.png 1x"
+                width="117" height="45" alt="Ford" />
             </a>
           </li>
           <li class="partner__item">
@@ -341,8 +350,8 @@
           </li>
           <li class="partner__item">
             <a class="partner__link partner__link--bosch" href="https://www.bosch.com">
-              <img class="partner__logo" src="img/partners/icon-Bosch@1x.png" srcset="img/partners/icon-Bosch@2x.png 2x, img/partners/icon-Bosch@1x.png 1x" width="115"
-                height="26" alt="Bosch" />
+              <img class="partner__logo" src="img/partners/icon-Bosch@1x.png" srcset="img/partners/icon-Bosch@2x.png 2x, img/partners/icon-Bosch@1x.png 1x"
+                width="115" height="26" alt="Bosch" />
             </a>
           </li>
           <li class="partner__item">
@@ -359,20 +368,20 @@
           </li>
           <li class="partner__item">
             <a class="partner__link partner__link--adidas" href="http://www.adidas.ru/">
-              <img class="partner__logo" src="img/partners/icon-Adidas@1x.png" srcset="img/partners/icon-Adidas@2x.png 2x, img/partners/icon-Adidas@1x.png 1x" width="78"
-                height="53" alt="Adidas" />
+              <img class="partner__logo" src="img/partners/icon-Adidas@1x.png" srcset="img/partners/icon-Adidas@2x.png 2x, img/partners/icon-Adidas@1x.png 1x"
+                width="78" height="53" alt="Adidas" />
             </a>
           </li>
           <li class="partner__item">
             <a class="partner__link" href="http://www.ifmo.ru/ru/">
-              <img class="partner__logo" src="img/partners/icon-ITMO@1x.png" srcset="img/partners/icon-ITMO@2x.png 2x, img/partners/icon-ITMO@1x.png 1x" width="114"
-                height="46" alt="ITMO" />
+              <img class="partner__logo" src="img/partners/icon-ITMO@1x.png" srcset="img/partners/icon-ITMO@2x.png 2x, img/partners/icon-ITMO@1x.png 1x"
+                width="114" height="46" alt="ITMO" />
             </a>
           </li>
           <li class="partner__item">
             <a class="partner__link" href="http://www.ricoh-imaging.ru/">
-              <img class="partner__logo" src="img/partners/icon-Pentax@1x.png" srcset="img/partners/icon-Pentax@2x.png 2x, img/partners/icon-Pentax@1x.png 1x" width="123"
-                height="24" alt="Pentax" />
+              <img class="partner__logo" src="img/partners/icon-Pentax@1x.png" srcset="img/partners/icon-Pentax@2x.png 2x, img/partners/icon-Pentax@1x.png 1x"
+                width="123" height="24" alt="Pentax" />
             </a>
           </li>
           <li class="partner__item">
@@ -383,14 +392,14 @@
           </li>
           <li class="partner__item">
             <a class="partner__link partner__link--PP" href="https://www.paypal.com/ru/home">
-              <img class="partner__logo" src="img/partners/icon-PayPal@1x.png" srcset="img/partners/icon-PayPal@2x.png 2x, img/partners/icon-PayPal@1x.png 1x" width="129"
-                height="34" alt="PayPal" />
+              <img class="partner__logo" src="img/partners/icon-PayPal@1x.png" srcset="img/partners/icon-PayPal@2x.png 2x, img/partners/icon-PayPal@1x.png 1x"
+                width="129" height="34" alt="PayPal" />
             </a>
           </li>
           <li class="partner__item partner__item--DG">
             <a class="partner__link" href="http://www.dolcegabbana.com/">
-              <img class="partner__logo" src="img/partners/icon-D&G@1x.png" srcset="img/partners/icon-D&G@2x.png 2x, img/partners/icon-D&G@1x.png 1x" width="101"
-                height="50" alt="D&G" />
+              <img class="partner__logo" src="img/partners/icon-D&G@1x.png" srcset="img/partners/icon-D&G@2x.png 2x, img/partners/icon-D&G@1x.png 1x"
+                width="101" height="50" alt="D&G" />
             </a>
           </li>
           <li class="partner__item">
