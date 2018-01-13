@@ -23,8 +23,8 @@
 
     &:hover,
     &:focus {
-      color: #5f29cc;
-      border-bottom: 3px solid #5f29cc;
+      color: $main-color-lilac;
+      border-bottom: 3px solid $main-color-lilac;
     }
   }
 }

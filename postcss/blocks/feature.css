@@ -40,9 +40,9 @@
     padding-bottom: 8px;
     padding-left: 29px;
     line-height: $line-height-basic;
-    color: #5f29cc;
+    color: $main-color-lilac;
     text-transform: capitalize;
-    border: 1px solid #5f29cc;
+    border: 1px solid $main-color-lilac;
     border-radius: 3px;
   }
 }

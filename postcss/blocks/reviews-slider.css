@@ -37,8 +37,8 @@
       left: 22px;
       width: 7px;
       height: 7px;
-      border-right: 2px solid #5f29cc;
-      border-bottom: 2px solid #5f29cc;
+      border-right: 2px solid $main-color-lilac;
+      border-bottom: 2px solid $main-color-lilac;
       transform: rotate(136deg);
     }
 

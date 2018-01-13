@@ -35,7 +35,7 @@
     color: black;
 
     &:hover {
-      color: #5f29cc;
+      color: $main-color-lilac;
     }
   }
 
@@ -77,6 +77,7 @@
     color: $main-color-lilac;
     background-color: white;
     border: 1px solid $main-color-lilac;
+    border-radius: 3px;
     cursor: pointer;
   }
 }

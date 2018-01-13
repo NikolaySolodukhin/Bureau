@@ -44,6 +44,7 @@
     text-align: center;
     color: white;
     background-color: $main-color-lilac;
+    border-radius: 3px;
 
     &:hover {
       color: white;
