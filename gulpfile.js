@@ -48,6 +48,9 @@ gulp.task('style', function() {
     stylesheetPath: 'build/css',
     spritePath: 'build/img/',
     retina: true,
+    spritesmith: {
+      padding: 5
+    },
     filterBy: function(image) {
       if (!/\/img\/sprite@2x\//.test(image.url)) {
         return Promise.reject();
@@ -56,7 +59,7 @@ gulp.task('style', function() {
     }
   };
 
-  return (gulp
+  return gulp
     .src('postcss/style.css')
     .pipe(plumber())
     .pipe(
@@ -84,7 +87,7 @@ gulp.task('style', function() {
         comments: false
       })
     )
-    .pipe(gulp.dest('build/css')) );
+    .pipe(gulp.dest('build/css'));
 });
 
 gulp.task('style:dev', function() {
@@ -238,12 +241,14 @@ gulp.task('copy', function() {
 
 gulp.task('critical', function() {
   return gulp
-    .src('./*.html')
+    .src('./index.html')
     .pipe(
       critical({
-        base: 'build/',
+        base: './',
         inline: true,
-        css: ['build/css/style.css']
+        css: 'build/css/style.css',
+        minify: true,
+        ignore: ['@font-face', /url\(/]
       })
     )
     .on('error', function(err) {
